@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/HKUDS/CLI-Anything",
+  "commit": "810c18b0d1ab9b234bc996c9fd999318523a3ef0",
+  "pinned": "2026-09-07",
+  "license": "Apache-2.0",
+  "sourceTree": "cli-anything-plugin/",
+  "note": "Every file below is a byte-identical copy of the upstream file at the pinned commit. Any intentional adaptation must move the file to the adapted list and document the delta.",
+  "files": {
+    "references/commands/cli-anything.md": "24c34e0bc73dc789db32c9221818b4e324e8fa53f6719680e78a50194a414123",
+    "references/commands/list.md": "c3ce736eda52acef0aefd19cafecb8cb93a3ac29f23d0a7805291de9f69dcb16",
+    "references/commands/refine.md": "f7de3b28bad73999af9da3c2259ad12ec110fa05b240b3a6c4eb53ff9f4af6ab",
+    "references/commands/test.md": "97c8e1fca0be5530b8931fbc6872d99fc3cacfba7e1456375666628d219aa75e",
+    "references/commands/validate.md": "d010bd07c90e6e42250c3355bfb50ad968d744646a25982700d328414b0a8dae",
+    "references/guides/auto-save-dry-run.md": "8b49247830c05a4c102ee9aae9f7d0f22338093c72797fbbb0606efe7ea7832e",
+    "references/guides/filter-translation.md": "9edaf6eeb7dff7a63125d68e0a98d97c129a09c26b9954c63727db250ae0807b",
+    "references/guides/mcp-backend.md": "6c8b56bea1cfe691825a2833482eefbdebe4bc536624967a7ab4e97f42def4c0",
+    "references/guides/preview-methodology.md": "e9d7c182262593e3e1a356c6bb173dad3cb3bfbe9f178c2caf653e851b85450b",
+    "references/guides/pypi-publishing.md": "dbb6fdbddc0eaed2925f0c42512c88f2a0e861bdd7b106268db0b013c5c4dc9c",
+    "references/guides/session-locking.md": "55da77cba0435715577d85dd709e46bc6ed964a6c12c2d2697f02a18e7a5364c",
+    "references/guides/skill-generation.md": "0654be080c3c21bdcdbfd37114b6b21d5d8ee32d26832ddaedc5e83fe708dc51",
+    "references/guides/timecode-precision.md": "7f620cbeb2499537238e6888de3bfd46629b66f3b8ad8b6f297b08b68325ada7",
+    "references/HARNESS.md": "498f728a90ac6702febeae0b15390bb444ad31f1f43e05bdb1caadac434ff711",
+    "references/PUBLISHING.md": "9e71a061af0180194062999c145e32f8fae5a43a362beb72e8eef2aae21d3db3",
+    "assets/preview_bundle.py": "c68103fc234689962fc60cff171e3fa5c9a7072b60dd20ae65bbb7e892423cf5",
+    "assets/repl_skin.py": "ae7c212948eb043bd8b23ad6eb63662b5d5b3b00aa52cf655033da1b90b9e583",
+    "assets/skill_generator.py": "986eee9ebcaa0294aa284279c22670ee4f8aef44d485c78c04e1ec3afe8f3a25",
+    "assets/templates/SKILL.md.template": "7267434f23624e61d88df5f878967af66ee1ca2ddf095bdf016481d3a3ca27a6"
+  },
+  "adapted": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "cli-anything",
+  "version": "0.2.0",
+  "kind": "agent",
+  "license": "Apache-2.0",
+  "displayName": "CLI-Anything",
+  "icon": "🛠️",
+  "description": "Build, refine, test, validate, and inventory agent-native CLI harnesses for arbitrary software with the CLI-Anything 7-phase methodology (HKUDS/CLI-Anything port). Ships the authoritative HARNESS.md SOP, per-workflow command specs, deep-dive guides, and the runtime assets (repl_skin.py, preview_bundle.py, skill_generator.py) copied into every generated harness. Generated CLIs are pip-installable Click packages with REPL, --json output, and undo/redo that drive the real software backend — never a reimplementation.",
+  "contributes": {
+    "agent": {
+      "skills": [
+        {
+          "id": "cli-anything",
+          "path": "./skills/cli-anything",
+          "displayName": "CLI-Anything",
+          "recommendedAudience": "global"
+        }
+      ],
+      "commands": ["./commands"]
+    }
+  }
+}

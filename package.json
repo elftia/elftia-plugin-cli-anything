@@ -1,0 +1,25 @@
+{
+  "name": "elftia-plugin-cli-anything",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Elftia agent plugin porting the HKUDS/CLI-Anything methodology: the HARNESS.md SOP, five workflow commands, deep-dive guides, and runtime harness assets.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build-dist.mjs",
+    "verify:upstream": "node scripts/verify-upstream.mjs",
+    "verify:dist": "node scripts/verify-dist.mjs",
+    "test": "vitest run",
+    "pack": "elftia-plugin pack dist/cli-anything --out release",
+    "release": "elftia-plugin release dist/cli-anything --out release",
+    "verify": "npm test && npm run verify:upstream && npm run build && npm run verify:dist"
+  },
+  "devDependencies": {
+    "@elftia/plugin-kit": "0.2.1",
+    "@types/node": "^24.7.0",
+    "vitest": "^4.0.0"
+  }
+}
