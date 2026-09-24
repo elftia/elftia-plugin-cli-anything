@@ -1,8 +1,8 @@
 {
   "name": "elftia-plugin-cli-anything",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
-  "description": "Elftia agent plugin porting the HKUDS/CLI-Anything methodology: the HARNESS.md SOP, five workflow commands, deep-dive guides, and runtime harness assets.",
+  "description": "Elftia agent plugin porting the HKUDS/CLI-Anything methodology: the HARNESS.md SOP, deep-dive guides, and runtime harness assets.",
   "license": "Apache-2.0",
   "type": "module",
   "engines": {

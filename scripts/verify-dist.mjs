@@ -37,7 +37,7 @@ try {
   if (!distExists) {
     problems.push(`dist/${PLUGIN_ID} does not exist — run npm run build first`);
   } else {
-    for (const entry of ["elftia-plugin.json", "LICENSE", "NOTICE.md", "skills", "commands"]) {
+    for (const entry of ["elftia-plugin.json", "LICENSE", "NOTICE.md", "skills"]) {
       await stat(join(distRoot, entry)).catch(() => problems.push(`dist missing: ${entry}`));
     }
 
@@ -51,14 +51,8 @@ try {
       if (!skillDist.includes(file)) problems.push(`dist missing: skills/${file}`);
     }
 
-    const cmdDist = await listFiles(join(distRoot, "commands"));
-    const cmdSrc = await listFiles(join(repoRoot, "commands"));
-    if (cmdDist.join("\n") !== cmdSrc.join("\n")) {
-      problems.push("dist commands/ tree differs from source commands/ tree");
-    }
-
-    // Byte-identity for every skill + command file.
-    for (const file of [...skillSrc, ...cmdSrc.map((f) => `commands/${f}`)]) {
+    // Byte-identity for every skill file.
+    for (const file of skillSrc) {
       const srcPath = join(repoRoot, file);
       const distPath = join(distRoot, file);
       let a, b;

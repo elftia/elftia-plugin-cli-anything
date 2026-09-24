@@ -19,8 +19,8 @@ the files and update the pin — do not edit them in place.
 
 ## What is original to this repo
 
-- `elftia-plugin.json` (Elftia manifest), `commands/*.md` (TinyElf slash-command
-  routers), `skills/cli-anything/SKILL.md` (Elftia-native entry point),
+- `elftia-plugin.json` (Elftia manifest), `skills/cli-anything/SKILL.md`
+  (Elftia-native entry point),
   `skills/cli-anything/extensions/` (Elftia-owned extras; first entry:
   `blender-live.md`, the Blender live-session MCP route — references
   ahujasid/blender-mcp `addon.py` @ `c5f35d9cc54451d785ac4c00c48bf9e98a2e8db9`,

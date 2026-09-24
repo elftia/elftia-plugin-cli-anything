@@ -1,6 +1,6 @@
 {
   "name": "cli-anything",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "kind": "agent",
   "license": "Apache-2.0",
   "displayName": "CLI-Anything",
@@ -15,8 +15,7 @@
           "displayName": "CLI-Anything",
           "recommendedAudience": "global"
         }
-      ],
-      "commands": ["./commands"]
+      ]
     }
   }
 }

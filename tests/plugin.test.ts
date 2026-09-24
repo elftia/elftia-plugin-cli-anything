@@ -25,15 +25,12 @@ describe("manifest", () => {
     expect(manifest.permissions).toBeUndefined();
   });
 
-  it("contributes the skill and the command root", () => {
+  it("contributes only the skill", () => {
     const skills = manifest.contributes.agent.skills;
     expect(Array.isArray(skills)).toBe(true);
     expect(skills[0].id).toBe("cli-anything");
     expect(existsSync(join(repoRoot, skills[0].path, "SKILL.md"))).toBe(true);
-
-    const commands = manifest.contributes.agent.commands;
-    expect(commands).toEqual(["./commands"]);
-    expect(existsSync(join(repoRoot, "commands"))).toBe(true);
+    expect(manifest.contributes.agent.commands).toBeUndefined();
   });
 });
 
@@ -66,25 +63,6 @@ describe("skill content", () => {
         exists: existsSync(join(base, reference)),
       }).toEqual({ reference, exists: true });
     }
-  });
-});
-
-describe("commands", () => {
-  const commandFiles = [
-    "cli-anything.md",
-    "cli-anything-refine.md",
-    "cli-anything-test.md",
-    "cli-anything-validate.md",
-    "cli-anything-list.md",
-  ];
-
-  it.each(commandFiles)("commands/%s has description + argument routing", (file) => {
-    const content = readFileSync(join(repoRoot, "commands", file), "utf8");
-    expect(content.startsWith("---\n")).toBe(true);
-    const frontmatter = content.slice(4, content.indexOf("\n---\n", 4));
-    expect(frontmatter).toMatch(/^description: \S/m);
-    expect(content).toContain("$ARGUMENTS");
-    expect(content).toContain("cli-anything");
   });
 });
 

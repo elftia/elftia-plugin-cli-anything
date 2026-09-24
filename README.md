@@ -6,8 +6,7 @@ that turns any GUI software (GIMP, Blender, LibreOffice, Shotcut, … or any
 repo) into an **agent-native CLI harness** — a pip-installable Python package
 (Click, REPL, `--json`, undo/redo) that drives the **real** software backend.
 
-Pure-data plugin: one skill + five slash commands, no code entries, no host
-permissions.
+Pure-data plugin: one skill, no code entries, no host permissions.
 
 ## What ships
 
@@ -19,19 +18,10 @@ permissions.
 | `skills/cli-anything/references/guides/*.md` | Deep dives: session locking, filter translation, timecode precision, preview methodology, PyPI publishing, skill generation, MCP backends, auto-save (upstream) |
 | `skills/cli-anything/assets/` | `repl_skin.py`, `preview_bundle.py`, `skill_generator.py`, `templates/SKILL.md.template` — copied into every generated harness (upstream) |
 | `skills/cli-anything/extensions/blender-live.md` | Elftia-owned: the Blender **live-session MCP route** — scriptable addon install, one-paste MCP server JSON, decision matrix vs the headless harness |
-| `commands/cli-anything*.md` | TinyElf slash commands: `/cli-anything`, `/cli-anything-refine`, `/cli-anything-test`, `/cli-anything-validate`, `/cli-anything-list` |
 
-Usage inside Elftia (any agent session with the skill enabled):
-
-```text
-/cli-anything https://github.com/blender/blender     # build a full harness (7 phases)
-/cli-anything-refine ./gimp "batch processing"        # targeted coverage expansion
-/cli-anything-test ./gimp                             # run the suite, update TEST.md
-/cli-anything-validate ./gimp                         # 52-check HARNESS.md audit
-/cli-anything-list --json                             # inventory generated CLIs
-```
-
-Or just ask: "用 CLI-Anything 给这个仓库生成一个 CLI" — the skill triggers.
+Usage inside Elftia (any agent session with the skill enabled): just ask
+"用 CLI-Anything 给这个仓库生成一个 CLI" — the skill triggers and walks the
+workflow map in `SKILL.md`.
 
 ## Provenance
 

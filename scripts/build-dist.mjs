@@ -2,7 +2,7 @@
 /**
  * Assemble `dist/cli-anything/` — the only tree Elftia installs.
  *
- * The tree is a pure-data agent plugin: manifest + skill + commands + license
+ * The tree is a pure-data agent plugin: manifest + skill + license
  * files, no code entries, so nothing to stamp. Upstream-derived bytes are
  * verified against `upstream.json` before anything is staged.
  */
@@ -18,7 +18,6 @@ const SOURCE_ENTRIES = [
   "LICENSE",
   "NOTICE.md",
   "skills",
-  "commands",
 ];
 
 async function assertSourcesPresent() {
