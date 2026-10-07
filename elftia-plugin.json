@@ -1,6 +1,7 @@
 {
   "name": "cli-anything",
   "version": "0.2.1",
+  "minElftiaVersion": "0.2.8",
   "kind": "agent",
   "license": "Apache-2.0",
   "displayName": "CLI-Anything",
